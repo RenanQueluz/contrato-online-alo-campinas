@@ -1,0 +1,236 @@
+
+
+.st-key-campos1{
+    width: 70%;
+}
+
+
+.st-key-campos1 input {
+    background-color: white;
+    border-color: white;
+    border-bottom: 2px solid black;
+    width: 30px;
+}
+
+
+
+.st-key-campos2{
+    width: 70%;
+    font-weight: bold;
+
+}
+
+
+.st-key-campos2 input {
+    background-color: white;
+    border-color: white;
+    border-bottom: 2px solid black;
+    width: 30px;
+}
+
+
+.st-key-datas{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.st-key-campos_data{
+     width: 28%;
+
+}
+
+.st-key-campos_data input{
+    background-color: white;
+    border-bottom: 3px solid black;
+    width: 50px;
+}
+
+
+.st-key-campos_data2{
+     width: 28%;
+
+}
+
+.st-key-campos_data2 input{
+    background-color: white;
+    border-bottom: 3px solid black;
+    width: 33px;
+}
+
+
+.st-key-campos3{
+     width: 80%;
+
+
+}
+
+.st-key-campos3 input{
+    background-color: white;
+    border-bottom: 3px solid black;
+    width: 33px;
+     
+
+}
+
+
+
+.st-key-campo_data3{
+     width: 14%;
+
+}
+
+.st-key-campo_data3 input{
+    background-color: white;
+    border-bottom: 3px solid black;
+    width: 33px;
+}
+
+
+
+
+
+
+.st-key-datas_resumo{
+    max-width: 120px !important; 
+}
+
+.st-key-datas_resumo input{
+    background-color: white;
+    border-bottom: 3px solid black;
+    width: 33px;
+}
+
+.st-key-data_vencimento{
+    max-width: 120px !important; 
+}
+
+
+.st-key-data_vencimento input{
+    background-color: white;
+    border-bottom: 3px solid black;
+    width: 33px;
+    
+}
+
+
+.st-key-parcela{
+    max-width: 120px !important;
+}
+
+
+
+.st-key-parcela input{
+    background-color: white;
+    border-color: white;
+    border-bottom: 2px solid black;
+    width: 30px;
+
+}
+
+
+.st-key-declaracao_final_local{
+     width: 80%;
+    
+}
+
+.st-key-declaracao_final_local input{
+    background-color: white;
+    border-color: white;
+    border-bottom: 2px solid black;
+    width: 30px;
+}
+
+
+.st-key-declaracao_final_data{
+    max-width: 120px !important; 
+}
+    
+
+
+.st-key-declaracao_final_data input{
+    background-color: white;
+    border-color: white;
+    border-bottom: 2px solid black;
+    width: 30px;
+}
+
+
+
+.st-key-contratante_associado{
+    max-width: 420px !important;
+}
+
+
+.st-key-contratante_associado input{
+    background-color: white;
+    border-color: white;
+    border-bottom: 2px solid black;
+    width: 30px;
+
+}
+
+.st-key-nome_testemunha1{
+     max-width: 420px !important;
+}
+
+.st-key-nome_testemunha1 input{
+    background-color: white;
+    border-color: white;
+    border-bottom: 2px solid black;
+    width: 30px;
+}
+
+.st-key-cpf_testemunha1{
+    max-width: 420px !important;
+}
+
+.st-key-cpf_testemunha1 input {
+    background-color: white;
+    border-color: white;
+    border-bottom: 2px solid black;
+    width: 30px;
+}
+
+
+
+.st-key-nome_testemunha2{
+     max-width: 420px !important;
+}
+
+.st-key-nome_testemunha2 input{
+    background-color: white;
+    border-color: white;
+    border-bottom: 2px solid black;
+    width: 30px;
+}
+
+.st-key-cpf_testemunha2{
+    max-width: 420px !important;
+}
+
+.st-key-cpf_testemunha2 input {
+    background-color: white;
+    border-color: white;
+    border-bottom: 2px solid black;
+    width: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
