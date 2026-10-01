@@ -1,7 +1,9 @@
 import streamlit as st
 import pathlib
 from gerador_pdf import gerar_pdf
-
+from gerar_email import enviar_email
+import time
+import streamlit as st
 #==============conexão com o css=========================
 
 with open("style.css", "r", encoding="utf-8") as arquivo:
@@ -32,6 +34,7 @@ def contrato():
        nome_completo = st.text_input("Nome completo", key="nome_campos1")
        #espaçamento de paragrafos
        st.markdown("<br>", unsafe_allow_html=True)
+
        rg = st.text_input("RG", key="rg_campos1")
 
          #espaçamento de paragrafos
@@ -85,6 +88,11 @@ def contrato():
          #espaçamento de paragrafos
        st.markdown("<br>", unsafe_allow_html=True)
 
+       cidade_uf2 = st.text_input("Cidade/UF", key="cidade_campos2")
+
+       #espaçamento de paragrafos
+       st.markdown("<br>", unsafe_allow_html=True)
+
        email_juridica = st.text_input(
         "E-mail:",
        key="email_juridica"
@@ -110,7 +118,7 @@ def contrato():
 
        st.write('##### 2. CONTRATADA')
 
-       st.write("**CLUBE ALÔ CAMPINAS E REGIÃO** pessoa juridica de direito privado, inscrita no CNPJ sob n°___________________, com sede/endereço em _____________, neste ato representada na forma de seu Contrato Social/Estatuto, por seu representante legal, doravante denominada simplesmente **CLUBE** ou **CONTRATADA**." )
+       st.write("**CLUBE ALÔ CAMPINAS E REGIÃO** pessoa juridica de direito privado, inscrita no CNPJ sob n° **55.633.392/0001-18**, com sede/endereço em **R: Antônio Lapa, 280 - Cambuí, Campinas - SP 13025-240**, neste ato representada na forma de seu Contrato Social/Estatuto, por seu representante legal, doravante denominada simplesmente **CLUBE** ou **CONTRATADA**." )
 
        st.write("CLUBE e ASSOCIADO, quando mencionados conjuntamente, serão denominados **PARTES**")
 
@@ -134,44 +142,84 @@ def contrato():
 
 #=============inicio da cláusula 2==============
         
-       st.write("### **CLÁUSULA 2ª – DOS BENEFÍCIOS E ACESSOS DO PLANO ANUAL** ")
+       st.write("### **CLÁUSULA 2ª – DOS PLANOS, BENEFÍCIOS E ACESSOS** ")
 
-       st.write("2.1. O Plano Anual contratado pelo ASSOCIADO compreenderá, durante o período de vigência:")
+       st.write("2.1.  O ASSOCIADO declara que, no ato da contratação, escolheu uma das modalidades de associação abaixo, ficando o plano escolhido expressamente indicado no Quadro Resumo da Contratação deste instrumento.  ")
+
+       st.text("PLANO CONEXÃO – R$ 1.490,00 (mil quatrocentos e noventa reais) por ano, ou 12 (doze) parcelas de R$ 149,00 (cento e quarenta e nove reais), totalizando R$ 1.788,00 (mil setecentos e oitenta e oito reais) no parcelamento. ")
+
+       st.text("Destinado ao associado que deseja ingressar no ecossistema do CLUBE, ampliar relacionamentos e gerar novas conexões. ")
 
        with st.container(key="clausula_2.1"):
           st.markdown("""
+              Inclui: 
+              
+              a) acesso à estrutura digital disponibilizada pelo CLUBE; 
 
-          a) acesso à estrutura digital disponibilizada pelo CLUBE;<br>
+              b) acesso ao site oficial do Clube Alô Campinas e Região;
+              
+              c) acesso aos canais oficiais de comunicação do CLUBE, inclusive grupos e canais destinados aos associados, conforme a modalidade disponibilizada; 
 
-          b) acesso ao site oficial do Clube Alô Campinas e Região;
+              d) participação nas ações de networking, encontros e demais atividades disponibilizadas aos associados, observadas as condições específicas de cada atividade;
 
-          c) acesso aos canais oficiais de comunicação do CLUBE, inclusive grupo exclusivo de WhatsApp e grupo/canal de Telegram, conforme a modalidade disponibilizada pelo CLUBE; 
+              e) certificado de associado;
+              
+              f) selo de Empresa Associada, quando aplicável; 
+              
+              g) acesso aos benefícios gerais do CLUBE que sejam expressamente disponibilizados a todos os associados; 
+              
+              h) demais benefícios gerais expressamente divulgados pelo CLUBE durante a vigência da associação. 
+              
+              2.2. **PLANO NETWORKING –  2.490,00    (dois mil quatrocentos e noventa reais) por ano, ou 12 (doze) parcelas de R$ 249,00 (duzentos e quarenta e nove reais), totalizando 2.988,00 (dois mil novecentos e oitenta e oito reais) no parcelamento.**
 
-          d) acesso ao Clube de Descontos Alô Campinas e Região, na condição de lojista e/ou usuário, conforme as regras específicas do programa; 
-
-          e) participação em eventos, treinamentos, visitas técnicas, cursos, encontros, ações de networking e demais atividades promovidas pelo CLUBE, observadas as condições específicas de cada atividade; 
-
-          f) publicação de até 2 (duas) matérias no Portal Alô Campinas e Região, conforme critérios editoriais, disponibilidade de agenda e materiais fornecidos pelo ASSOCIADO; 
-
-          g) até 5 (cinco) Stories no perfil oficial @alocampinaseregiao, desde que o conteúdo seja fornecido pelo ASSOCIADO em formato adequado para publicação;
-
-          h) certificado de associado; 
-
-          i) selo de Empresa Associada, quando aplicável; 
-
-          j) demais benefícios expressamente divulgados pelo CLUBE durante a vigência da associação. 
-    """, unsafe_allow_html=True)
-          
-
-          with st.container(key="clausula_2.2"):
-             st.markdown("""
-             2.2. Os benefícios previstos nesta cláusula são pessoais e vinculados ao ASSOCIADO, sendo vedada a cessão ou transferência a terceiros sem autorização prévia da CONTRATADA.
-
-             2.3. A participação em eventos, cursos, treinamentos, experiências ou programas específicos poderá estar sujeita a inscrição prévia, limite de vagas, disponibilidade, critérios de participação ou pagamento adicional.
-
-             2.4. O fato de determinada atividade ser divulgada pelo CLUBE não significa que seu custo esteja necessariamente incluído no valor da associação. 
-             
-             2.5. Benefícios, descontos, produtos ou serviços oferecidos por empresas parceiras são de responsabilidade dos respectivos parceiros, especialmente quanto a preços, condições comerciais, disponibilidade, qualidade e execução dos serviços contratados diretamente entre parceiro e ASSOCIADO. 
+              Destinado ao associado que busca maior presença, relacionamento estratégico e oportunidades de negócios.
+              
+              Além dos benefícios gerais previstos no Plano Conexão, inclui: 
+              
+              a) 2 (duas) matérias por ano no Portal Alô Campinas e Região, conforme critérios editoriais, disponibilidade de agenda e materiais fornecidos pelo ASSOCIADO; 
+              
+              b) 5 (cinco) Stories por ano no perfil oficial @alocampinaseregiao, mediante fornecimento de material adequado pelo ASSOCIADO; 
+              
+              c) acesso ao Clube de Desconto Alô Campinas e Região, na condição e nos termos aplicáveis ao ASSOCIADO; 
+              
+              d) demais benefícios expressamente previstos na proposta comercial ou neste contrato. Contrato de Adesão e Prestação de Serviços – Clube Alô Campinas e Região 
+              
+              2.3. **PLANO ECOSSISTEMA –  4.990,00 (quatro mil novecentos e noventa reais) por ano, ou 12 (doze) parcelas de  499,00 (quatrocentos e noventa e nove reais), totalizando  5.988,00 (cinco mil novecentos e oitenta e oito reais) no parcelamento.** 
+              
+              Destinado ao associado que deseja maior exposição, proximidade e participação estratégica dentro do CLUBE. 
+              
+              Além dos benefícios gerais previstos no Plano Conexão, inclui: 
+              
+              a) 12 (doze) matérias por ano no Portal Alô Campinas e Região, correspondentes, em regra, a 1 (uma) matéria por mês, conforme critérios editoriais, disponibilidade de agenda e materiais fornecidos pelo ASSOCIADO; 
+              
+              b) 3 (três) vídeos profissionais por ano, observadas as condições de produção, captação, agenda e formato previamente definidos entre as PARTES; 
+              
+              c) 2 (dois) Reels em formato Collab por ano, sujeitos à disponibilidade e às regras das respectivas plataformas;
+              
+              d) 48 (quarenta e oito) Stories por ano, correspondentes, em regra, a 1 (um) Story por semana, mediante fornecimento de material adequado ou conforme produção previamente acordada; 
+              
+              e) 1 (uma) participação em Podcast ou Programa, conforme disponibilidade de agenda, formato e critérios editoriais do CLUBE; 
+              
+              f) acesso ao Clube de Desconto Alô Campinas e Região, na condição e nos termos aplicáveis ao ASSOCIADO; 
+              
+              g) demais benefícios expressamente previstos na proposta comercial ou neste contrato. 
+              
+              2.4. Os benefícios de conteúdo, divulgação e produção previstos nos Planos Networking e Ecossistema são pessoais e vinculados ao ASSOCIADO, não podendo ser transferidos, vendidos ou cedidos a terceiros sem autorização prévia e expressa da CONTRATADA. 
+              
+              2.5. As quantidades de matérias, Stories, vídeos, Reels e participações previstas em cada plano correspondem ao limite anual contratado e não representam garantia de resultado, alcance, número de visualizações, leads, clientes, vendas ou qualquer resultado comercial específico. 
+              
+              2.6. As publicações e produções serão realizadas de acordo com calendário, disponibilidade de agenda, critérios editoriais, formato das plataformas, disponibilidade de equipe e recebimento tempestivo dos materiais e informações necessários pelo ASSOCIADO. 
+              
+              2.7. Caso o ASSOCIADO não forneça, em prazo razoável informado pelo CLUBE, os materiais, informações, aprovações ou disponibilidade necessários para execução de determinado benefício, a realização poderá ser remarcada para data posterior, sem transferência automática para período contratual seguinte. Contrato de Adesão e Prestação de Serviços – Clube Alô Campinas e Região 
+              
+              2.8. Benefícios não utilizados durante a vigência contratual não serão convertidos automaticamente em dinheiro, desconto, crédito ou abatimento, salvo se houver acordo escrito em sentido diverso entre as PARTES. 
+              
+              2.9. A participação em eventos, cursos, treinamentos, experiências ou programas específicos poderá estar sujeita a inscrição prévia, limite de vagas, disponibilidade, critérios de participação ou pagamento adicional, quando assim informado previamente. 
+              
+              2.10. O fato de determinada atividade ser divulgada pelo CLUBE não significa que seu custo esteja necessariamente incluído no valor do plano contratado. 
+              
+              2.11. Benefícios, descontos, produtos ou serviços oferecidos por empresas parceiras são de responsabilidade dos respectivos parceiros, especialmente quanto a preços, condições comerciais, disponibilidade, qualidade e execução dos serviços contratados diretamente entre parceiro e ASSOCIADO. 
+         
             """, unsafe_allow_html=True )
 
 #=============fim da cláusula 2 ==================
@@ -179,24 +227,35 @@ def contrato():
 
 #=============inicio de cláusula 3================
 
-             st.write(" ### CLÁUSULA 3ª – DOS SERVIÇOS DE CONTEÚDO E DIVULGAÇÃO ")
+          st.write(" ### CLÁUSULA 3ª – DOS SERVIÇOS DE CONTEÚDO E DIVULGAÇÃO ")
 
-             with st.container(key="clausula_3.1"):
+          with st.container(key="clausula_3.1"):
                st.markdown("""
-                 3.1. Os 5 (cinco) Stories previstos no Plano Anual deverão ser disponibilizados pelo ASSOCIADO em formato previamente adequado à publicação. 
-                 
-                 3.2. Caso o ASSOCIADO necessite que o CLUBE produza ou adapte material criativo, será cobrado valor adicional de **R$ 80,00 (oitenta reais) por criativo produzido**, mediante prévia aprovação do ASSOCIADO. 
-                 
-                 3.3. A produção de vídeos profissionais não está incluída nos 5 (cinco) Stories do Plano Anual, podendo ser contratada separadamente. 
-                 
-                 3.4. Quando contratada separadamente, a produção de pacote de até **3 (três) vídeos, incluindo captação e/ou demais recursos previamente acordados, terá valor adicional de R$ 800,00 (oitocentos reais)**, conforme orçamento e condições previamente aprovados pelo ASSOCIADO. 
-                 
-                 3.5. Eventual utilização de imagem aérea, drone, fotógrafo, equipamento especial, deslocamento ou produção adicional poderá gerar custo adicional, previamente informado e aprovado pelo ASSOCIADO. 
-                 
-                 3.6. A publicação de matérias e conteúdos estará sujeita a critérios editoriais, disponibilidade de agenda e adequação às políticas de conteúdo do Portal e das plataformas utilizadas. 
-                 
-                 3.7. O CLUBE poderá recusar material que contenha conteúdo ilícito, discriminatório, ofensivo, enganoso, difamatório, que viole direitos de terceiros, propriedade intelectual, normas legais ou políticas das plataformas. 
+                  3.1. Os benefícios de conteúdo e divulgação incluídos nos Planos Networking e Ecossistema deverão observar o calendário e as condições de execução definidos pelo CLUBE. 
                   
+                  3.2. As matérias do Portal serão produzidas e/ou publicadas conforme critérios editoriais do Portal Alô Campinas e Região. O ASSOCIADO deverá fornecer informações, imagens, contatos e demais materiais necessários, responsabilizando-se pela veracidade e pelos direitos de uso desses conteúdos. 
+                  
+                  3.3. Os Stories incluídos nos Planos Networking e Ecossistema deverão ser disponibilizados pelo ASSOCIADO em formato previamente adequado à publicação, salvo quando houver produção previamente acordada pelo CLUBE. 
+                  
+                  3.4. Quando o benefício contratado envolver produção de material pelo CLUBE, a captação, edição, duração, formato, local e demais condições serão definidos previamente conforme a estrutura e o escopo do plano contratado. 
+                  
+                  3.5. No Plano Ecossistema, os 3 (três) vídeos profissionais incluídos correspondem às produções previstas no plano, não abrangendo automaticamente despesas extraordinárias, tais como deslocamentos especiais, locações, atores, equipamentos especiais, drone, fotógrafo adicional ou outros recursos não previstos no escopo originalmente acordado. 
+
+
+                  3.6. Os 2 (dois) Reels em formato Collab dependem da disponibilidade e das funcionalidades da plataforma utilizada. O CLUBE não responde por eventual indisponibilidade, alteração ou limitação técnica da plataforma de terceiros. 
+                  
+                  3.7. A participação em Podcast ou Programa prevista no Plano Ecossistema dependerá de disponibilidade de agenda, formato do programa, critérios editoriais e condições técnicas da produção. 
+                  
+                  3.8. Caso o ASSOCIADO solicite produção, adaptação ou criação de materiais que ultrapassem o escopo expressamente incluído em seu plano, o serviço adicional poderá ser contratado mediante orçamento e aprovação prévia. 
+                  
+                  3.9. Na hipótese de contratação adicional de criativo pelo ASSOCIADO, permanece aplicável o valor de R$ 80,00 (oitenta reais) por criativo produzido, mediante prévia aprovação. 
+                  
+                  3.10. Produções de vídeos ou outros serviços que ultrapassem o escopo do plano poderão ser contratados separadamente, mediante orçamento e aprovação prévia. 
+                  
+                  3.11. A publicação de matérias e conteúdos estará sujeita a critérios editoriais, disponibilidade de agenda e adequação às políticas de conteúdo do Portal e das plataformas utilizadas. 
+                  
+                  3.12. O CLUBE poderá recusar material que contenha conteúdo ilícito, discriminatório, ofensivo, enganoso, difamatório, que viole direitos de terceiros, propriedade intelectual, normas legais ou políticas das plataformas. 
+                 
         
              """, unsafe_allow_html=True )
 
@@ -205,10 +264,10 @@ def contrato():
 
 #==============inicio da cláusula 4
 
-             st.write("### CLÁUSULA 4ª – DAS ATIVIDADES E EVENTOS ")
+          st.write("### CLÁUSULA 4ª – DAS ATIVIDADES E EVENTOS ")
 
 
-             with st.container(key="clausula_4.1"):
+          with st.container(key="clausula_4.1"):
                st.markdown("""
                 4.1. O CLUBE divulgará aos associados os eventos, cursos, treinamentos, visitas técnicas e demais atividades por meio dos canais oficiais de comunicação.
 
@@ -310,35 +369,39 @@ def contrato():
 #=============inico da cláusula 8==============
     st.write(" ### CLÁUSULA 8ª – DO VALOR E DA FORMA DE PAGAMENTO ")
 
-    st.write("8.1. O valor do Plano Anual à vista é de: ")
-
-    st.write("**R$ 1.490,00 (mil quatrocentos e noventa reais).** ")
-
-    st.write("8.2. Caso seja escolhida a modalidade de pagamento parcelado por boleto bancário, o preço contratado será de: ")
-
-    st.text("**12 (doze) parcelas de R$ 149,90 (cento e quarenta e nove reais e noventa centavos), totalizando R$ 1.798,80 (mil setecentos e noventa e oito reais e oitenta centavos).** ")
-
-    st.write("8.3. A diferença entre o preço à vista e o preço parcelado deverá ser apresentada ao ASSOCIADO de maneira clara antes da contratação. ")
-
-    st.write("8.4. O pagamento poderá ser realizado por: ")
-
     with st.container(key="clausula_8.1"):
        st.markdown("""
-        a) PIX; 
 
-        b) dinheiro em espécie;
+       8.1. O valor devido pelo ASSOCIADO será aquele correspondente ao plano escolhido e indicado no Quadro Resumo da Contratação. 
+       
+       8.2. PLANO CONEXÃO: valor anual à vista de 1.490,00 (mil quatrocentos e noventa reais) ou, na modalidade parcelada prevista nesta contratação, 12 (doze) parcelas de 149,00 (cento e quarenta e nove reais), totalizando 1.788,00 (mil setecentos e oitenta e oito reais). 
+       
+       8.3. PLANO NETWORKING: valor anual à vista de 2.490,00 (dois mil quatrocentos e noventa reais) ou, na modalidade parcelada prevista nesta contratação, 12 (doze) parcelas de  249,00 (duzentos e quarenta e nove reais), totalizando  2.988,00 (dois mil novecentos e oitenta e oito reais). 
+       
+       8.4. PLANO ECOSSISTEMA: valor anual à vista de 4.990,00 (quatro mil novecentos e noventa reais) ou, na modalidade parcelada prevista nesta contratação, 12 (doze) parcelas de 499,00 (quatrocentos e noventa e nove reais), totalizando  5.988,00 (cinco mil novecentos e oitenta e oito reais). 
+       
+       8.5. A diferença entre o preço à vista e o preço parcelado deverá ser apresentada ao ASSOCIADO de maneira clara antes da contratação, quando houver diferença. 
+       
+       8.6. O pagamento poderá ser realizado por: 
+       
+       a) PIX; 
+       
+       b) dinheiro em espécie; 
+       
+       c) cartão de crédito, conforme condições da operadora e modalidade escolhida; 
+       
+       d) boleto bancário, quando disponibilizado pelo CLUBE. 
+       
+       8.7. Na hipótese de pagamento por cartão de crédito, eventual acréscimo decorrente exclusivamente da modalidade de parcelamento deverá ser informado previamente ao ASSOCIADO. 
 
-        c) cartão de crédito, conforme condições da operadora e modalidade escolhida; 
+       8.8. Na modalidade de boleto bancário, os vencimentos serão aqueles constantes dos respectivos boletos emitidos pelo CLUBE ou por instituição responsável pelo processamento do pagamento. 
+       
+       8.9. Salvo disposição diversa expressamente indicada no Quadro Resumo da Contratação, o primeiro pagamento deverá ocorrer em até 7 (sete) dias úteis contados da assinatura deste instrumento. 
+       
+       8.10. O ASSOCIADO declara ter recebido informações suficientes sobre o preço total contratado, quantidade de parcelas, valor das parcelas e condições de pagamento. 
 
-        d) boleto bancário, quando disponibilizado pelo CLUBE. 
+          
         
-        8.5. Na hipótese de pagamento por cartão de crédito, eventual acréscimo decorrente exclusivamente da modalidade de parcelamento deverá ser informado previamente ao ASSOCIADO. 
-        
-        8.6. Na modalidade de boleto bancário, os vencimentos serão aqueles constantes dos respectivos boletos emitidos pelo CLUBE ou por instituição responsável pelo processamento do pagamento. 
-        
-        8.7. Salvo disposição diversa expressamente indicada no quadro financeiro, o primeiro pagamento deverá ocorrer em até 7 (sete) dias úteis contados da assinatura deste instrumento.
-         
-        8.8. O ASSOCIADO declara ter recebido informações suficientes sobre o preço total contratado, quantidade de parcelas, valor das parcelas e condições de pagamento.        
   """, unsafe_allow_html=True  )
 
 #=============fim da cláusula 8 ===============
@@ -369,8 +432,8 @@ def contrato():
     st.write("10.1. O presente contrato terá vigência de **12 (doze) meses**, iniciando-se no:")
 
     with st.container(key="datas"):
-      data_inicio = st.text_input("**Inicio:**", key="campos_data")
-      data_final = st.text_input("**Término:**", key="campos_data2")
+      data_inicio = st.text_input("**Dia:**", key="campos_data")
+      data_final = st.text_input("**Términa:**", key="campos_data2")
 
      #espaçamento de paragrafos
     st.markdown("<br>", unsafe_allow_html=True)
@@ -805,7 +868,7 @@ def contrato():
         st.markdown("""
          26.1. As PARTES buscarão solucionar amigavelmente eventuais divergências decorrentes deste contrato. 
          
-         26.2. Nas relações que não estejam sujeitas a regra legal específica de competência, fica eleito o foro da Comarca de ______________________________, Estado de ____________, para dirimir questões decorrentes deste contrato. 
+         26.2. Nas relações que não estejam sujeitas a regra legal específica de competência, fica eleito o foro da Comarca de **Campinas**, Estado de **São paulo**, para dirimir questões decorrentes deste contrato. 
          
          26.3. Caso seja aplicável legislação de proteção ao consumidor que estabeleça foro diverso ou mais favorável ao consumidor, será respeitada a competência legalmente prevista.
        """, unsafe_allow_html=True)
@@ -873,17 +936,23 @@ def contrato():
 
     with st.container(key="campos_4"):
 
-      st.write("**Plano contratado:** PLANO ANUAL ")
+      st.write("**Plano contratado:** ")
+
+      plano = st.radio(
+    "Escolha o plano:",
+    [
+        " PLANO CONEXÃO – R$ 1.490,00 à vista ou 12 x 149,00 Total no parcelamento: 1.788,00 ",
+
+        "PLANO NETWORKING – 2.490,00 à vista ou 12 x 249,00 Total no parcelamento: 2.988,00",
+
+        "PLANO ECOSSISTEMA – R$ 4.990,00 à vista ou 12 x 499,00 Total no parcelamento: 5.988,00 "
+    ],
+    key="plano"
+)
 
       with st.container(key="datas_resumo"):
         data_de_incio = st.text_input("**Data de inicio:**", key="data_inicio")
         data_de_termino = st.text_input("**Data de término:**", key="data_final")
-
-
-
-      st.write("**Valor à vista:** R$ 1.490,00 ")
-      st.write("**Valor à vista:** R$ 1.490,00 ")
-      st.write("**Total no parcelamento:** R$ 1.798,80 ")
 
     forma_pagamento = st.radio(
     " **Forma de pagamento:**",
@@ -904,6 +973,11 @@ def contrato():
 
       valor_parcela = st.text_input("**Valor da parcela: R$**", key="valor_parcela")
 
+    st.write("Declaração de ciência do plano: " 
+    "O ASSOCIADO declara que recebeu informações sobre o plano selecionado, seus respectivos benefícios, limitações, valores e condições de pagamento, reconhecendo que os benefícios variam conforme a modalidade contratada. ")
+
+#espaçamento de paragrafos
+    st.markdown("<br>", unsafe_allow_html=True)
 
 #=====================declaração final =========================
     st.write("### DECLARAÇÃO FINAL ")
@@ -914,7 +988,7 @@ def contrato():
       local = st.text_input("Local:", key="local")
 
     with st.container(key="declaracao_final_data"):
-      data4 = st.text_input("Data:", key="data4")
+      data4 = st.text_input("data:", key="data4")
 
 #=====================contratante-associado=======================
 
@@ -935,15 +1009,15 @@ def contrato():
 
     with st.container(key="clausula_ .1"):
      st.markdown("""
-      Razão Social:
+      Razão Social: **ALÔ CAMPINAS E REGIÃO**
 
-      CNPJ:
+      CNPJ: **55.633.392/0001-18**
 
-      Representant Legal:
+      Representant Legal: **WELDER SABAINI DOS SANTOS**
 
-      CPF:
+      CPF: **357.691.718-71**
 
-      Assinatura
+      Assinatura:__________________________________________
         
   """, unsafe_allow_html=True  )
 
@@ -1007,6 +1081,7 @@ def contrato():
     "representante_legal": representante_legal,
     "cpf_representante": cpf_representante,
     "rg_representante": rg_representante,
+    "cidade_uf2": cidade_uf2,
     "email_juridica": email_juridica,
     "telefone_juridica": telefone_juridica,
 
@@ -1018,6 +1093,9 @@ def contrato():
     "nome_cl14": nome_cl14,
     "data_imagem": data,
 
+    "plano": plano,
+    "data_de_inicio": data_de_incio ,
+    "data_de_termino": data_de_termino,
     "forma_pagamento": forma_pagamento,
 
     "data_vencimento": data_vencimento,
@@ -1039,6 +1117,45 @@ def contrato():
     
 
     if st.button("Finaliza e enviar ", key="botao"):
-       gerar_pdf(dados)
+       try:
+          with st.status("📄 Finalizando contrato...", expanded=True) as status:
 
+            st.write("Gerando o contrato...")
+            gerar_pdf(dados)
+
+            st.write("Enviando...")
+            enviar_email(dados)
+
+            status.update(
+                label="✅ Contrato finalizado!",
+                state="complete",
+                expanded=False
+            )
+
+          st.success(
+            f"Tudo certo, {dados['nome_completo']}! "
+            "Seja muito bem-vindo(a) ao Clube Alô Campinas e Região!"
+          )
+
+          st.markdown(
+              """
+            <script>
+               setTimeout(function() {
+                 window.location.reload();
+                }, 5000);
+            </script>
+             """,
+         unsafe_allow_html=True
+)
+
+
+       except Exception as erro:
+
+        st.error(
+            "❌ Não foi possível concluir o envio do contrato. "
+            "Por favor, avise o responsável pelo atendimento."
+        )
+
+        print("ERRO:", erro)
+  
 contrato()
