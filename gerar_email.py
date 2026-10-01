@@ -45,7 +45,5 @@ def enviar_email(dados):
         servidor.send_message(mensagem)
 
         print("E-mail enviado!")
-
-        print("REMETENTE:", remetente)
-        print("DESTINATARIO:", destinatario)
+ 
 

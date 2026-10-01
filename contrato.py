@@ -563,7 +563,7 @@ def contrato():
     "**AUTORIZO** O uso gratuito da minha imagem, voz e   nome nos termos desta cláusula. ", key="autorizo")
 
     nao_autoriza = st.checkbox(
-      "**NÃO AUTORIZO** O uso da minha imagem, voz e nome para fins de divulgação institucional, ressalvadas as hipóteses legalmente permitidas. ",
+      "**EU NÃO AUTORIZO** O uso da minha imagem, voz e nome para fins de divulgação institucional, ressalvadas as hipóteses legalmente permitidas. ",
       disabled=autoriza, key="não_autorizo")
 
     nome_cl14 = st.text_input("Nome:", key="campos3")
