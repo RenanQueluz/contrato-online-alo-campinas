@@ -936,17 +936,17 @@ def contrato():
       plano = st.radio(
     "Escolha o plano:",
     [
-        "PLANO CONEXÃO – R\$ 1.490,00 à vista ou 12 x R\$ 149,00 Total no parcelamento: R\$ 1.788,00 ",
+        "PLANO CONEXÃO – R$ 1.490,00 à vista ou 12 x R$ 149,00 Total no parcelamento: R$ 1.788,00 ",
 
-        "PLANO NETWORKING – R\$ 2.490,00 à vista ou 12 x R\$ 249,00 Total no parcelamento: R\$ 2.988,00",
+        "PLANO NETWORKING – R$ 2.490,00 à vista ou 12 x R$ 249,00 Total no parcelamento: R$ 2.988,00",
 
-        "PLANO ECOSSISTEMA – R\$ 4.990,00 à vista ou 12 x R\$ 499,00 Total no parcelamento: R\$ 5.988,00 ",
+        "PLANO ECOSSISTEMA – R$ 4.990,00 à vista ou 12 x R$ 499,00 Total no parcelamento: R$ 5.988,00 ",
 
-        "PERMUTA 1 – R\$ 1.490,00 à vista ou 12 x R\$ 149,00 Total no parcelamento: R\$ 1.788,00 ",
+        "PERMUTA 1 – R$ 1.490,00 à vista ou 12 x R$ 149,00 Total no parcelamento: R$ 1.788,00 ",
         
-        "PERMUTA 2 – R\$ 2.490,00 à vista ou 12 x R\$ 249,00 Total no parcelamento: R\$ 2.988,00",
+        "PERMUTA 2 – R$ 2.490,00 à vista ou 12 x R$ 249,00 Total no parcelamento: R$ 2.988,00",
         
-        "PERMUTA 3 – R\$ 4.990,00 à vista ou 12 x R\$ 499,00 Total no parcelamento: R\$ 5.988,00 "
+        "PERMUTA 3 – R$ 4.990,00 à vista ou 12 x R$ 499,00 Total no parcelamento: R$ 5.988,00 "
     ],
     key="plano"
 )
