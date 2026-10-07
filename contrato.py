@@ -170,7 +170,7 @@ def contrato():
               
               h) demais benefícios gerais expressamente divulgados pelo CLUBE durante a vigência da associação. 
               
-              2.2. **PLANO NETWORKING –  2.490,00    (dois mil quatrocentos e noventa reais) por ano, ou 12 (doze) parcelas de R$ 249,00 (duzentos e quarenta e nove reais), totalizando 2.988,00 (dois mil novecentos e oitenta e oito reais) no parcelamento.**
+              2.2. PLANO NETWORKING –  R\$ 2.490,00  (dois mil quatrocentos e noventa reais) por ano, ou 12 (doze) parcelas de R$ 249,00 (duzentos e quarenta e nove reais), totalizando  R\$ 2.988,00 (dois mil novecentos e oitenta e oito reais) no parcelamento.
 
               Destinado ao associado que busca maior presença, relacionamento estratégico e oportunidades de negócios.
               
@@ -184,7 +184,7 @@ def contrato():
               
               d) demais benefícios expressamente previstos na proposta comercial ou neste contrato. Contrato de Adesão e Prestação de Serviços – Clube Alô Campinas e Região 
               
-              2.3. **PLANO ECOSSISTEMA –  4.990,00 (quatro mil novecentos e noventa reais) por ano, ou 12 (doze) parcelas de  499,00 (quatrocentos e noventa e nove reais), totalizando  5.988,00 (cinco mil novecentos e oitenta e oito reais) no parcelamento.** 
+              2.3. **PLANO ECOSSISTEMA –   R\$ 4.990,00 (quatro mil novecentos e noventa reais) por ano, ou 12 (doze) parcelas de  499,00 (quatrocentos e noventa e nove reais), totalizando   R\$ 5.988,00 (cinco mil novecentos e oitenta e oito reais) no parcelamento.** 
               
               Destinado ao associado que deseja maior exposição, proximidade e participação estratégica dentro do CLUBE. 
               
@@ -374,11 +374,11 @@ def contrato():
 
        8.1. O valor devido pelo ASSOCIADO será aquele correspondente ao plano escolhido e indicado no Quadro Resumo da Contratação. 
        
-       8.2. PLANO CONEXÃO: valor anual à vista de 1.490,00 (mil quatrocentos e noventa reais) ou, na modalidade parcelada prevista nesta contratação, 12 (doze) parcelas de 149,00 (cento e quarenta e nove reais), totalizando 1.788,00 (mil setecentos e oitenta e oito reais). 
+       8.2. PLANO CONEXÃO: valor anual à vista de  R\$ 1.490,00 (mil quatrocentos e noventa reais) ou, na modalidade parcelada prevista nesta contratação, 12 (doze) parcelas de  R\$ 149,00 (cento e quarenta e nove reais), totalizando  R\$ 1.788,00 (mil setecentos e oitenta e oito reais). 
        
-       8.3. PLANO NETWORKING: valor anual à vista de 2.490,00 (dois mil quatrocentos e noventa reais) ou, na modalidade parcelada prevista nesta contratação, 12 (doze) parcelas de  249,00 (duzentos e quarenta e nove reais), totalizando  2.988,00 (dois mil novecentos e oitenta e oito reais). 
+       8.3. PLANO NETWORKING: valor anual à vista de  R\$ 2.490,00 (dois mil quatrocentos e noventa reais) ou, na modalidade parcelada prevista nesta contratação, 12 (doze) parcelas de  R\$ 249,00 (duzentos e quarenta e nove reais), totalizando  R\$ 2.988,00 (dois mil novecentos e oitenta e oito reais). 
        
-       8.4. PLANO ECOSSISTEMA: valor anual à vista de 4.990,00 (quatro mil novecentos e noventa reais) ou, na modalidade parcelada prevista nesta contratação, 12 (doze) parcelas de 499,00 (quatrocentos e noventa e nove reais), totalizando  5.988,00 (cinco mil novecentos e oitenta e oito reais). 
+       8.4. PLANO ECOSSISTEMA: valor anual à vista de  R\$ 4.990,00 (quatro mil novecentos e noventa reais) ou, na modalidade parcelada prevista nesta contratação, 12 (doze) parcelas de  R\$ 499,00 (quatrocentos e noventa e nove reais), totalizando  R\$ 5.988,00 (cinco mil novecentos e oitenta e oito reais). 
        
        8.5. A diferença entre o preço à vista e o preço parcelado deverá ser apresentada ao ASSOCIADO de maneira clara antes da contratação, quando houver diferença. 
        
@@ -598,7 +598,7 @@ def contrato():
        15.5. O ASSOCIADO não poderá utilizar a marca do CLUBE de forma que gere aparência de representação, sociedade, franquia, parceria comercial, patrocínio ou vínculo que não esteja expressamente autorizado. 
    
   """, unsafe_allow_html=True  )
-#==================fim da cláusula 15 ========================
+#==================fim da cláusula 15 ==========================
 
 
 #=======================inicio da clásula 16 ======================
@@ -644,7 +644,9 @@ def contrato():
          
          d) envio de informações sobre eventos, atividades e benefícios; 
          
-         e) cumprimento de obrigações legais e regulatórias; f) exercício regular de direitos; 
+         e) cumprimento de obrigações legais e regulatórias; 
+         
+         f) exercício regular de direitos; 
          
          g) proteção do crédito, quando legalmente aplicável; 
          
@@ -678,7 +680,7 @@ def contrato():
          
          17.10. Solicitações relacionadas à privacidade e proteção de dados poderão ser encaminhadas para: 
          
-         juridico@clubealocampinaseregiao.com.br 
+         weldersaba@clubealocampinaseregiao.com.br
 
          17.11. A Política de Privacidade do CLUBE integra este contrato para todos os fins e deverá estar disponível ao ASSOCIADO em local de fácil acesso. 
         
@@ -705,7 +707,6 @@ def contrato():
 #================= fim da cláusula 18 =====================
 
 #==================inicio da cláusula 19 ====================
-
 
     st.write("### CLÁUSULA 19ª – DA POLÍTICA DE PRIVACIDADE ")
 
@@ -797,8 +798,7 @@ def contrato():
     22.1. Este contrato não cria entre as PARTES vínculo empregatício, societário, representação comercial, franquia, mandato, agência, associação societária ou qualquer outra relação além daquela expressamente prevista neste instrumento. 
     
     22.2. O ASSOCIADO não está autorizado a assumir obrigações, realizar negócios ou representar o CLUBE perante terceiros sem autorização expressa e por escrito. 
-       
-         
+           
   """, unsafe_allow_html=True  )
 
 #=================== fim da clásula 22 ===================
@@ -820,9 +820,7 @@ def contrato():
   """, unsafe_allow_html=True  )
 
 
-
-     
-#=================== fim da clásula 23 ===================
+#=================== fim da clásula 23 ====================
 
 #===================== Cláusula 24 ========================
 
@@ -856,9 +854,8 @@ def contrato():
          25.4. Qualquer alteração relevante deste contrato deverá ser formalizada por escrito, ressalvadas as atualizações permitidas pela legislação e pelas regras específicas de renovação.      
      """, unsafe_allow_html=True)
 
-
          
-  #=================== fim da clásula 25===================
+  #=================== fim da clásula 25====================
       
   #===================== Cláusula 26=========================
        
@@ -868,7 +865,7 @@ def contrato():
         st.markdown("""
          26.1. As PARTES buscarão solucionar amigavelmente eventuais divergências decorrentes deste contrato. 
          
-         26.2. Nas relações que não estejam sujeitas a regra legal específica de competência, fica eleito o foro da Comarca de **Campinas**, Estado de **São paulo**, para dirimir questões decorrentes deste contrato. 
+         26.2. Nas relações que não estejam sujeitas a regra legal específica de competência, fica eleito o foro da Comarca de **Campinas**, Estado de **São Paulo**, para dirimir questões decorrentes deste contrato. 
          
          26.3. Caso seja aplicável legislação de proteção ao consumidor que estabeleça foro diverso ou mais favorável ao consumidor, será respeitada a competência legalmente prevista.
        """, unsafe_allow_html=True)
@@ -930,8 +927,6 @@ def contrato():
 
 
 #====================Quadro de resumo do contrato==============
-
-
     st.write("### QUADRO RESUMO DA CONTRATAÇÃO ")
 
     with st.container(key="campos_4"):
@@ -941,11 +936,17 @@ def contrato():
       plano = st.radio(
     "Escolha o plano:",
     [
-        " PLANO CONEXÃO – R$ 1.490,00 à vista ou 12 x 149,00 Total no parcelamento: 1.788,00 ",
+        "PLANO CONEXÃO – R$ 1.490,00 à vista ou 12 x R$ 149,00 Total no parcelamento: R$ 1.788,00 ",
 
-        "PLANO NETWORKING – 2.490,00 à vista ou 12 x 249,00 Total no parcelamento: 2.988,00",
+        "PLANO NETWORKING – R$ 2.490,00 à vista ou 12 x R$ 249,00 Total no parcelamento: R$ 2.988,00",
 
-        "PLANO ECOSSISTEMA – R$ 4.990,00 à vista ou 12 x 499,00 Total no parcelamento: 5.988,00 "
+        "PLANO ECOSSISTEMA – R$ 4.990,00 à vista ou 12 x R$ 499,00 Total no parcelamento: R$ 5.988,00 ",
+
+        "PERMUTA 1 – R$ 1.490,00 à vista ou 12 x R$ 149,00 Total no parcelamento: R$ 1.788,00 ",
+        
+        "PERMUTA 2 – R$ 2.490,00 à vista ou 12 x R$ 249,00 Total no parcelamento: R$ 2.988,00",
+        
+        "PERMUTA 3 – R$ 4.990,00 à vista ou 12 x R$ 499,00 Total no parcelamento: R$ 5.988,00 "
     ],
     key="plano"
 )
@@ -960,7 +961,9 @@ def contrato():
         "PIX",
         "DINHEIRO",
         "CARTÃO DE CRÉDITO",
-        "BOLETO BANCÁRIO"
+        "BOLETO BANCÁRIO",
+        "PERMUTA"
+
     ], 
 )
 
@@ -1147,7 +1150,6 @@ def contrato():
              """,
          unsafe_allow_html=True
 )
-
 
        except Exception as erro:
 

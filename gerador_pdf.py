@@ -3,7 +3,6 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib.enums import TA_LEFT
 
-
 #====================gerador de dpf=========================================
 def gerar_pdf(dados):
   arquivo = "Contrato.pdf"
@@ -815,27 +814,27 @@ def gerar_pdf(dados):
 )
 
   texto(
-    "8.2. PLANO CONEXÃO: valor anual à vista de 1.490,00 "
+    "8.2. PLANO CONEXÃO: valor anual à vista de R$ 1.490,00 "
     "(mil quatrocentos e noventa reais) ou, na modalidade parcelada "
-    "prevista nesta contratação, 12 (doze) parcelas de 149,00 "
-    "(cento e quarenta e nove reais), totalizando 1.788,00 "
+    "prevista nesta contratação, 12 (doze) parcelas de R$ 149,00 "
+    "(cento e quarenta e nove reais), totalizando R$ 1.788,00 "
     "(mil setecentos e oitenta e oito reais)."
 )
 
   texto(
-    "8.3. PLANO NETWORKING: valor anual à vista de 2.490,00 "
+    "8.3. PLANO NETWORKING: valor anual à vista de R$ 2.490,00 "
     "(dois mil quatrocentos e noventa reais) ou, na modalidade "
     "parcelada prevista nesta contratação, 12 (doze) parcelas de "
-    "249,00 (duzentos e quarenta e nove reais), totalizando "
-    "2.988,00 (dois mil novecentos e oitenta e oito reais)."
+    " R$ 249,00 (duzentos e quarenta e nove reais), totalizando "
+    "R$ 2.988,00 (dois mil novecentos e oitenta e oito reais)."
 )
 
   texto(
-    "8.4. PLANO ECOSSISTEMA: valor anual à vista de 4.990,00 "
+    "8.4. PLANO ECOSSISTEMA: valor anual à vista de R$ 4.990,00 "
     "(quatro mil novecentos e noventa reais) ou, na modalidade "
     "parcelada prevista nesta contratação, 12 (doze) parcelas de "
-    "499,00 (quatrocentos e noventa e nove reais), totalizando "
-    "5.988,00 (cinco mil novecentos e oitenta e oito reais)."
+    "R$ 499,00 (quatrocentos e noventa e nove reais), totalizando "
+    "R$ 5.988,00 (cinco mil novecentos e oitenta e oito reais)."
 )
 
   texto(
@@ -1407,7 +1406,7 @@ def gerar_pdf(dados):
 )
 
   texto(
-    "juridico@clubealocampinaseregiao.com.br"
+    "weldersaba@clubealocampinaseregiao.com.br"
 )
 
   texto(
@@ -1715,8 +1714,8 @@ def gerar_pdf(dados):
   texto(
     "26.2. Nas relações que não estejam sujeitas a regra legal específica "
     "de competência, fica eleito o foro da Comarca de "
-    "<b>____________________________________________</b>, "
-    "Estado de <b>________________________</b>, para dirimir questões "
+    "<b>Campinas</b>, "
+    "Estado de <b>São Paulo</b>, para dirimir questões "
     "decorrentes deste contrato."
   )
 
@@ -1787,7 +1786,6 @@ def gerar_pdf(dados):
   )
 
 
-  
 # =================================================
 #CLÁUSULA 28ª – DOS ANEXOS
 # ================================================

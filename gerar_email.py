@@ -5,7 +5,6 @@ from email.message import EmailMessage
 
 load_dotenv()
 
-
 def enviar_email(dados):
 
     remetente = os.getenv("REMETENTE")
@@ -31,7 +30,7 @@ def enviar_email(dados):
         pdf,
         maintype="application",
         subtype="pdf",
-        filename="Contrato.pdf"
+        filename=f"Contrato de Adesão - {dados["nome_completo"]}.pdf"
     )
 
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as servidor:
