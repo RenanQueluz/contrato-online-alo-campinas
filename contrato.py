@@ -170,7 +170,7 @@ def contrato():
               
               h) demais benefícios gerais expressamente divulgados pelo CLUBE durante a vigência da associação. 
               
-              2.2. PLANO NETWORKING –  R\$ 2.490,00  (dois mil quatrocentos e noventa reais) por ano, ou 12 (doze) parcelas de R$ 249,00 (duzentos e quarenta e nove reais), totalizando  R\$ 2.988,00 (dois mil novecentos e oitenta e oito reais) no parcelamento.
+              2.2. PLANO NETWORKING –  R\$ 2.490,00  (dois mil quatrocentos e noventa reais) por ano, ou 12 (doze) parcelas de R\$ 249,00 (duzentos e quarenta e nove reais), totalizando  R\$ 2.988,00 (dois mil novecentos e oitenta e oito reais) no parcelamento.
 
               Destinado ao associado que busca maior presença, relacionamento estratégico e oportunidades de negócios.
               
